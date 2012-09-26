@@ -1,0 +1,17 @@
+@import "bootstrap";
+body { padding-top: 60px; }
+@import "bootstrap-responsive";
+
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #FD6E8A;
+  text-decoration: none;
+  text-shadow: 0 1px 0 gray;
+}
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}

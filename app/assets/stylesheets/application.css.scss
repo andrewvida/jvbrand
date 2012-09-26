@@ -11,3 +11,19 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+  background-image: url("/assets/background-tile.jpeg");
+}
+
+.navbar.navbar-fixed-top .navbar-inner {
+  background: url("/assets/navbar.png") repeat-x;
+  box-shadow: none;
+-webkit-box-shadow: none; }
+
+.brand {
+  background: url("/assets/logo2.png") no-repeat;
+  height: 91px;
+  width: 300px;
+  position: absolute;
+z-index: 9999; }

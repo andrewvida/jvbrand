@@ -1,9 +1,18 @@
-!!!
 %html
-%head
-  %title Jvbrand
-  = stylesheet_link_tag    "application", :media => "all"
-  = javascript_include_tag "application"
-  = csrf_meta_tags
-%body
-= yield
+  %head
+    %title Julian-Vida
+    %meta{:charset => "utf-8"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
+    = stylesheet_link_tag :application, :media => "all"
+    = javascript_include_tag :application
+    = csrf_meta_tags
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.brand{:href => "/"}
+          %ul.nav.pull-right
+            %li
+              %a{:href => "about", :id => "about-link"} About
+    .container
+      =yield
